@@ -6,9 +6,9 @@ theme: /
     state: PinCode
         intent!: /pinCode
         if: $parseTree["_application"]
-            a: Пин код для приложения 
+            go!: /PinCode/PinCodeApplication
         elseif: $parseTree["_card"]
-            a: Пин код по карте
+            go!: /PinCode/PinCodeСаrd
         else: 
             a: Сейчас расскажу порядок действий. Выберите, что именно планируете сделать:
                 1. Поменять пароль для входа в приложение.
