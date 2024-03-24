@@ -2,6 +2,13 @@ require: slotfilling/slotFilling.sc
   module = sys.zb-common
 theme: /
 
+
+    state: PinCode
+        intent!: pinCode
+        a: Установить пин под можно где-то.
+        
+        
+        
     state: Start
         q!: $regex</start>
         a: Начнём.
