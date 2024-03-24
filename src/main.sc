@@ -3,11 +3,19 @@ require: slotfilling/slotFilling.sc
 theme: /
 
 
-    state: PinCode
+    # state: PinCode
+    #     intent!: pinCode
+    #     a: test
+    #     script:
+    #         $reactions.answer(JSON.stringify('test'));
+            
+            
+            
+    state: PinCode1
         intent!: pinCode
         a: test
-        script:
-            $reactions.answer(JSON.stringify('test'));
+
+            
         
     state: Start
         q!: $regex</start>
