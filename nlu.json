@@ -56,6 +56,19 @@
       "refs" : [ ]
     },
     "patterns" : [ ],
+    "slots" : [ {
+      "name" : "application",
+      "entity" : "application",
+      "required" : false,
+      "prompts" : [ ],
+      "array" : true
+    }, {
+      "name" : "card",
+      "entity" : "card",
+      "required" : false,
+      "prompts" : [ ],
+      "array" : true
+    } ],
     "priority" : 0
   }, {
     "path" : "/пока",

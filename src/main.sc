@@ -5,9 +5,15 @@ theme: /
 
     state: PinCode
         intent!: /pinCode
-        script:
-            $reactions.answer(JSON.stringify($parseTree));
+        if: $parseTree["_application"]
+            a: Пин код для приложения 
+        elseif: $parseTree["_card"]
+            a: Пин код по карте
+        else: 
+            a: пин код
             
+            
+        
             
 
 
