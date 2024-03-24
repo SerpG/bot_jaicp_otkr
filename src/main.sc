@@ -15,7 +15,7 @@ theme: /
                 2. Поменять PIN-код от карты.
                 Пожалуйста, отправьте цифру, соответствующую вашему выбору.Или нажмите на кнопку
             buttons: 
-                "Карта" -> /StatePath
+                "Карта" -> /PinCode/PinCodeApplication
                 "Приложение" -> /PinCode/PinCodeСаrd
         
         state: PinCodeСаrd
