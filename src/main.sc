@@ -5,7 +5,10 @@ theme: /
 
     state: PinCode
         intent!: /pinCode
-        a: Устновить пин код можно где-то
+        script:
+            $reactions.answer(JSON.stringify($parseTree));
+            
+            
 
 
             
