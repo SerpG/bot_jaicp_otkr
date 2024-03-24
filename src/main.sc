@@ -38,6 +38,7 @@ theme: /
                 1. на экране "Профиль" выберите "Изменить код входа в приложение".
                 2. введите SMS-код.
                 3. придумайте новый код для входа в приложение и повторите его.
+                
 
 
 
@@ -62,3 +63,20 @@ theme: /
     state: Match
         event!: match
         a: {{$context.intent.answer}}
+        
+        
+        
+    state: SetAlarm
+        q!: будильнк
+        a: На какое время?
+    
+        state: Time
+            q: * @duckling.time *
+            script:
+                $temp.time = $parseTree["_duckling.time"];
+                $pushgate.createEvent($temp.time.value);
+            a: Будильник установлен на {{$temp.time.hour}}:{{$temp.time.minute}}.
+    
+    state: Alarm
+        event!: timerEvent
+        a: Пора вставать!
