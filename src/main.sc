@@ -3,20 +3,13 @@ require: slotfilling/slotFilling.sc
 theme: /
 
 
-    # state: PinCode
-    #     intent!: pinCode
-    #     a: test
-    #     script:
-    #         $reactions.answer(JSON.stringify('test'));
-            
-            
-            
-    state: PinCode1
-        intent!: pinCode
-        a: test
+    state: PinCode
+        intent!: /pinCode
+        a: Устновить пин код можно где-то
+
 
             
-        
+
     state: Start
         q!: $regex</start>
         a: Начнём.
