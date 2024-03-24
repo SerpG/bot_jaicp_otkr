@@ -5,9 +5,7 @@ theme: /
 
     state: PinCode
         intent!: pinCode
-        a: Установить пин под можно где-то.
-        
-        
+        a: test
         
     state: Start
         q!: $regex</start>
