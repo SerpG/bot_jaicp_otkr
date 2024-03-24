@@ -6,6 +6,8 @@ theme: /
     state: PinCode
         intent!: pinCode
         a: test
+        script:
+            $reactions.answer(JSON.stringify('test'));
         
     state: Start
         q!: $regex</start>
